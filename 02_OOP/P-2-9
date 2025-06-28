@@ -1,0 +1,35 @@
+// File: AreaCircle.java
+// Topic: OOP - Class with Formula
+// Author: Z. Sunny
+// Description: Program to calculate area of a circle using class and object.
+
+import java.util.Scanner;
+
+class Circle
+{
+    Double r;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter radius ::");
+        r=sc.nextDouble();
+    }
+    void output()
+    {
+        double area=3.14*r*r;
+
+        System.out.println("Area of circle  ::"+area);
+    }
+}
+public class AreaCircle
+{
+    public static void main(String [] args )
+    {
+        Circle circle=new Circle();
+
+        circle.input();
+        circle.output();
+    }
+}
