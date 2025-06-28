@@ -1,0 +1,38 @@
+// File: BankAccount.java
+// Topic: OOP - Class with Multiple Data Members
+// Author: Z. Shani
+// Description: Program to accept and display bank account details using class and object.
+
+import java.util.Scanner;
+
+class Bank
+{
+    Double balance;
+    String name;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter name ::");
+        name=sc.nextLine();
+
+        System.out.println("Enter balance ::");
+        balance=sc.nextDouble();
+    }
+    void output()
+    {
+        System.out.println("Account Holder ::"+name);
+        System.out.println("Current balance ::"+balance);
+    }
+}
+public class BankAccount
+{
+    public static void main(String [] args)
+    {
+        Bank bank=new Bank();
+
+        bank.input();
+        bank.output();
+    }
+}
