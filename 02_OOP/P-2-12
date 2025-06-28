@@ -1,0 +1,42 @@
+// File: RectangleDetails.java
+// Topic: OOP - Class with Multiple Methods
+// Author: Z. Shani
+// Description: Program to calculate area and perimeter of a rectangle using object-oriented approach.
+
+import java.util.Scanner;
+
+class Rectangle
+{
+    int length;
+    int width;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the length ::");
+        length=sc.nextInt();
+
+        System.out.println("Enter the wigth ::");
+        width=sc.nextInt();
+    }
+    void output()
+    {
+        int area=length*width;
+        int peri=2*(length+width);
+
+        System.out.println("Area ::"+area);
+        System.out.println("perimeter ::"+peri);
+    }
+}
+public class RectangleDetails
+{
+    public static void main(String [] args)
+    {
+        Rectangle r=new Rectangle();
+
+        r.input();
+        r.output();
+    }
+    
+}
