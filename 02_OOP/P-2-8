@@ -1,0 +1,38 @@
+// File: TableNumber.java
+// Topic: OOP - Multiplication Table
+// Author: Z. Shani
+// Description: Prints multiplication table of a given number using class and object.
+
+import java.util.Scanner;
+
+class Table
+{
+    int num;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the table number ::");
+        num=sc.nextInt();
+    }
+    void output()
+    {
+        System.out.println("Table of "+num+" ::");
+
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(" "+num+"*"+i+"="+i*num);
+        }
+    }
+}
+public class TableNumber
+{
+    public static void main(String [] args)
+    {
+        Table t=new Table();
+
+        t.input();
+        t.output();
+    }
+}
