@@ -1,0 +1,43 @@
+// File: P-2-5
+// Topic: OOP - Basic Arithmetic Operations using Class & Object
+// Author: Z. Shani
+// Description: Performs addition, subtraction, multiplication, and division on two double values using OOP.
+
+import java.util.Scanner;
+
+class Sum
+{
+    Double a;
+    Double b;
+
+    void input()
+    {
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the value a ::");
+        a=sc.nextDouble();
+
+        System.out.println("Enter the value b ::");
+        b=sc.nextDouble();
+
+    }
+    void output()
+    {
+        System.out.println("a+b is ::"+(a+b));
+        System.out.println("a-b is ::"+(a-b));
+        System.out.println("a*b is ::"+(a*b));
+        System.out.println("a/b is ::"+(a/b));
+    }
+}
+public class P-2-5
+{
+    public static void main(String [] args )
+    {
+        Sum s=new Sum();
+
+        s.input();
+        s.output();
+        
+    }
+}
