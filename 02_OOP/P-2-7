@@ -1,0 +1,39 @@
+// File: PrintNumber.java
+// Topic: OOP - Number Series (1 to N)
+// Author: Z. Shani
+// Description: Prints number series from 1 to N using class and object.
+
+import java.util.Scanner;
+
+class NumberSeries
+{
+    int num;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the number ::");
+        num=sc.nextInt();
+
+    }
+    void output()
+    {
+        System.out.println("Number from 1 to"+num+" ::");
+
+        for(int i=1;i<=num;i++)
+        {
+            System.out.println(""+i);
+        }
+    }
+}
+public class PrintNumber
+{
+    public static void main(String [] args)
+    {
+        NumberSeries n=new NumberSeries();
+
+        n.input();
+        n.output();
+    }
+}
