@@ -1,0 +1,39 @@
+// File: Sum1.java
+// Topic: OOP - Class and Method
+// Author: Z. Shani
+// Description: Demonstrates basic sum operation using object-oriented approach
+
+import java.util.Scanner;
+
+class Calculation
+{
+    int n1;
+    int n2;
+
+    void get()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the number ::");
+        n1=sc.nextInt();
+
+        System.out.println("Enter the number ::");
+        n2=sc.nextInt();
+
+
+    }
+    void sum()
+    {
+        System.out.println("Sum of ::"+(n1+n2));
+    }
+}
+public class P-2-4
+{
+    public static void main(String [] args)
+    {
+        Calculation c=new Calculation();
+
+        c.get();
+        c.sum();
+    }
+}
