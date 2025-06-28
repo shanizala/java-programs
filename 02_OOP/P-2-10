@@ -1,0 +1,47 @@
+// File: CheckPositiveNegative.java
+// Topic: OOP - Conditional Check using Class
+// Author: Z. Shani
+// Description: Program to check whether a number is positive, negative or zero using class and object.
+
+import java.util.Scanner;
+
+class Check
+{
+    int num;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter a number ::");
+        num=sc.nextInt();
+    }
+    void output()
+    {
+        if(num > 0)
+        {
+            System.out.println("Number is Positive ");
+        }
+        else
+        {
+            if(num < 0)
+            {
+                System.out.println("Number is Negative ");
+            }
+            else
+            {
+                System.out.println("number is Zero");
+            }
+        }
+    }
+}
+public class CheckPositiveNegative
+{
+    public static void main(String [] args)
+    {
+        Check c=new Check();
+
+        c.input();
+        c.output();
+    }
+}
