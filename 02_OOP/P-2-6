@@ -1,0 +1,44 @@
+// File: ChecknumOddEven.java
+// Topic: OOP - Condition (Even/Odd Checker)
+// Author: Z. Shani
+// Description: Checks whether the entered number is even or odd using class and object.
+
+import java.util.Scanner;
+
+class condition
+{
+    int n;
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the number ::");
+        n=sc.nextInt();
+
+    }
+    void output()
+    {
+        if(n%2==0)
+        {
+            System.out.println("number is Even ");
+
+        }
+        else
+        {
+            System.out.println("number is Odd ");
+        }
+    }
+}
+public class ChecknumOddEven
+{
+    public static void main(String [] args)
+    {
+        condition c=new condition();
+
+
+        c.input();
+        c.output();
+
+    }
+}
