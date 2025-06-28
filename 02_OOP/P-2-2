@@ -1,0 +1,30 @@
+// File: P-2-2
+// Topic: OOP - Class and Object
+// Author: Z. Shani
+// Description: Demonstrates creation of a Mobile class with object and method usage
+
+import java.util.Scanner;
+
+class Mobile 
+{
+    String name;
+    int price;
+
+    void display()
+    {
+        System.out.println("mobile name is ::"+name);
+        System.out.println("mobile price is ::"+price);
+    }
+}
+public class P-2-2
+{
+    public static void main(String [] args)
+    {
+        Mobile m=new Mobile();
+
+        m.name="samsung";
+        m.price=20000;
+
+        m.display();
+    }
+}
