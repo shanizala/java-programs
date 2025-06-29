@@ -1,0 +1,47 @@
+// File: Array2.java
+// Topic: Array with Dynamic Size using OOP
+// Author: Z. Shani
+// Description: Program to input and display array elements using object-oriented approach.
+
+import java.util.Scanner;
+
+class Array
+{
+    int [] n;
+
+    void input(int size)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        n=new int[size];
+
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter Element a["+i+"] ::");
+            n[i]=sc.nextInt();
+        }
+
+    }
+    void output()
+    {
+        for(int num : n)
+        {
+            System.out.println("Element is ::"+num);
+        }
+    }
+}
+public class Array2
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the Array size ::");
+        int size=sc.nextInt();
+
+        Array array=new Array();
+
+        array.input(size);
+        array.output();
+    }
+}
