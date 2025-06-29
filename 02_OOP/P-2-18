@@ -1,0 +1,66 @@
+// File: ArrayPositiveNegative.java
+// Topic: Display Positive, Negative and Zero Elements from Array using OOP
+// Author: Z. Shani
+
+import java.util.Scanner;
+class Array
+{
+    int [] n;
+
+    void input(int size)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        n=new int[size];
+
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter a Array Element a["+i+"] ::");
+            n[i]=sc.nextInt();
+        }
+
+    }
+    void output()
+    {
+        System.out.println("Positive Elements ");
+        for(int num : n)
+        {
+            if(num > 0)
+            {
+                System.out.println(" "+num);
+            }
+        }
+
+        System.out.println("Negative Elements");
+        for(int num : n)
+        {
+            if(num <0)
+            {
+                System.out.println(" "+num);
+            }
+        }
+        
+        for(int num : n)
+        {
+            if(num == 0)
+            {
+                System.out.println("Element is zero "+num);
+            }
+        }
+    }
+}
+public class ArrayPositiveNegative
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the Array size ::");
+        int size=sc.nextInt();
+
+        Array array=new Array();
+
+        array.input(size);
+        array.output();
+    }
+}
