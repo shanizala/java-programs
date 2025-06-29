@@ -1,0 +1,41 @@
+// File: Arraymain
+// Topic: Array using OOP (Class and Object)
+// Author: Z. Shani
+// Description: This program takes 5 integers from the user and displays them using class methods.
+
+import java.util.Scanner;
+
+class Arrayinput
+{
+    int [] n=new int[5];
+
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter 5 number ");
+        
+        for(int i=0;i<n.length;i++)
+        {
+            n[i]=sc.nextInt();
+        }
+    }
+
+    void output()
+    {
+        for(int i=0;i<n.length;i++)
+        {
+            System.out.println("Element a["+i+"] is ::"+n[i]);
+        }
+    }
+}
+public class Arraymain
+{
+    public static void main(String [] args)
+    {
+        Arrayinput a=new Arrayinput();
+
+        a.input();
+        a.output();
+    }
+}
